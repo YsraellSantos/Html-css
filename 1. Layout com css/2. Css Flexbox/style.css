@@ -1,0 +1,39 @@
+body{
+  padding: 30px;
+}
+
+.app {
+  display: flex;
+  margin: auto;
+  border: solid 2px black;
+  max-width: 900px;
+  padding: 30px;
+
+
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-grow: 1;
+
+
+  gap: 20px;
+
+  flex-wrap:  wrap;
+
+}
+
+#container div {
+  border: solid 2px red;
+  width: 100px;
+  width: 100px;
+
+  background-color: lightgray;
+}
+
+#container div:nth-child(1) {
+  margin-left: auto;
+}
