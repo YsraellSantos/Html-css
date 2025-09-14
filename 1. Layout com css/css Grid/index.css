@@ -2,11 +2,64 @@
 
   /* Pai */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 100px;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
 
+  height: 100vh;
 }
+
+
 
 .app > div{
   border: solid 1px black;
+}
+
+.app > div:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end:4 ;
+
+  background-color: rgba(172, 4, 4, 0.342);
+} 
+
+.app > div:nth-child(2){
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  background-color: rgba(0, 255, 255, 0.486);
+}
+
+.app > div:nth-child(3){
+  grid-column: 3/4;
+
+  background-color: rgba(0, 255, 0, 0.342);
+}
+
+.app > div:nth-child(4){
+  grid-column: 1/4;
+
+  background-color: rgba(255, 217, 0, 0.26);
+} 
+
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+
+  & div{
+    border: solid 1px black;
+    width: 200px;
+    background-color: lightgray;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    & p:nth-child(1){
+      color: red;
+      background-color: black;
+      padding: 20px;
+    }
+  }
 }
