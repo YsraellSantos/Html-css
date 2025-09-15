@@ -1,0 +1,35 @@
+.area {
+  display: grid;
+  
+  grid-template-areas:
+  "header header header"
+  "main main aside"
+  "footer footer footer";
+  
+  height: 100vh;
+}
+
+.area header{
+grid-area: header;
+
+}
+
+.area main{
+  grid-area: main;
+}
+
+
+.area aside{
+  grid-area: aside;
+}
+
+.area footer{
+  grid-area: footer;
+}
+
+.area header,
+.area main,
+.area aside,
+.area footer {
+  border: solid 1px black;
+}
